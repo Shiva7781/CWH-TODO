@@ -7,8 +7,7 @@ const ShowTodos = () => {
   let initTodo;
   if (localStorage.getItem("todos") === null) {
     initTodo = [];
-  }
-  else {
+  } else {
     initTodo = JSON.parse(localStorage.getItem("todos"));
   }
 

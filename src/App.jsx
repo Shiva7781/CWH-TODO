@@ -7,19 +7,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShowTodos from "./MyComponents/ShowTodos";
 
 function App() {
-
   return (
     <>
-      <Router>
-        <Header title="My Todos List" searchBar={false} />
+      <div className="App">
+        <Router>
+          <Header title="My Todos List" searchBar={false} />
 
-        <Routes>
-          <Route path="/" element={<ShowTodos />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<ShowTodos />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
 
-        <Footer />
-      </Router>
+          <Footer />
+        </Router>
+      </div>
     </>
   );
 }
